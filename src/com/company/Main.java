@@ -4,8 +4,10 @@ import java.sql.SQLOutput;
 
 public class Main {
 
+    private static final int x = 10;
+
     public static void main(String[] args) {
-        int x = 5;
+
         myMethod(x);
     }
 
@@ -14,7 +16,9 @@ public class Main {
         int counter = 0;
         int num2 = 1;
 
-        while (counter > n) {
+        while (counter < n) {
+            System.out.printf(num1 + " ");
+
             int num3 = num2 + num1;
             num1 = num2;
             num2 = num3;
